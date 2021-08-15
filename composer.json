@@ -1,0 +1,22 @@
+{
+    "name": "jitesoft/wp-logger",
+    "type": "wordpress-plugin",
+    "description": "An actual logger for WordPress.",
+    "authors": [
+        {
+            "email": "johannes@jitesoft.com",
+            "name": "Johannes Tegnér",
+            "homepage": "https://jitesoft.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.0",
+        "ext-json": "*",
+        "jitesoft/loggers": ">=2.2.1",
+        "php": ">=7.4.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
