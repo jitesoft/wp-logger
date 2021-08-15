@@ -1,6 +1,7 @@
 {
     "name": "jitesoft/wp-logger",
     "type": "wordpress-plugin",
+    "license": "MIT",
     "description": "An actual logger for WordPress.",
     "authors": [
         {
