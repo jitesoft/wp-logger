@@ -1,11 +1,13 @@
 <?php
 /*
-Plugin Name:  WP-Logger
-Description:  An actual logger for WordPress.
-Version:      1.0.0
-Author:       Johannes Tegnér
-Author URI:   https://jitesoft.com
-License:      MIT License
+Plugin Name:       WP-Logger
+Description:       An actual logger for WordPress.
+Plugin URI:        https://github.com/jitesoft/wp-logger
+GitHub Plugin URI: https://github.com/jitesoft/wp-logger
+Version:           1.0.0
+Author:            Johannes Tegnér
+Author URI:        https://jitesoft.com
+License:           MIT License
 */
 namespace Jitesoft\Wordpress\Plugins\Logger;
 
