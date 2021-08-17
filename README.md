@@ -20,8 +20,11 @@ To use the logger in your own code, just call the `Jitesoft\Wordpress\Plugins\Lo
 which will return a PSR logger to use!  
   
 The PSR Logger in the implementation currently only uses a STD logger (stdout and stderr) but
-it's a "multi logger" (see [jitesoft/logger](https://packagist.org/packages/jitesoft/loggers) for more information) which allow you to add more loggers
-to it if needed.
+it's a "multi logger" (see [jitesoft/logger](https://packagist.org/packages/jitesoft/loggers) for more information) 
+which allow you to add more loggers if needed.
+
+By setting the `WP_LOGGER_FORMAT` environment variable to `json`, the logger will use json output instead
+of standard text.
 
 In future versions, more loggers might be added.
 
