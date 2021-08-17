@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dba81ee37e11abeef9fceb61585e510a",
+    "content-hash": "c40c067fd23d02560e8774f9a0a7821c",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,24 +158,25 @@
         },
         {
             "name": "jitesoft/loggers",
-            "version": "2.2.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/jitesoft/open-source/php/loggers.git",
-                "reference": "2301dd1a723d61c59863e3c61cbc31cc20eb2f21"
+                "reference": "982f029d5fdd688dbcab6e2ab93c5a1769d0cf6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/jitesoft%2Fopen-source%2Fphp%2Floggers/repository/archive.zip?sha=2301dd1a723d61c59863e3c61cbc31cc20eb2f21",
-                "reference": "2301dd1a723d61c59863e3c61cbc31cc20eb2f21",
+                "url": "https://gitlab.com/api/v4/projects/jitesoft%2Fopen-source%2Fphp%2Floggers/repository/archive.zip?sha=982f029d5fdd688dbcab6e2ab93c5a1769d0cf6b",
+                "reference": "982f029d5fdd688dbcab6e2ab93c5a1769d0cf6b",
                 "shasum": ""
             },
             "require": {
-                "nesbot/carbon": "^2.49",
-                "php": "^7.4.2|>=8",
-                "psr/log": "^1.1.4"
+                "nesbot/carbon": "^2.51",
+                "php": ">=8",
+                "psr/log": ">=3.0.0"
             },
             "require-dev": {
+                "ext-json": "*",
                 "ext-pdo": "*",
                 "mikey179/vfsstream": "1.6.*",
                 "php-mock/php-mock-phpunit": "2.6.*",
@@ -183,6 +184,7 @@
                 "squizlabs/php_codesniffer": "^3.6"
             },
             "suggest": {
+                "ext-json": "Required for most loggers using json parsing.",
                 "ext-pdo": "Required to use the PDO Logger."
             },
             "type": "library",
@@ -205,7 +207,7 @@
             "support": {
                 "issues": "https://gitlab.com/api/v4/projects/4987858/issues"
             },
-            "time": "2021-06-13T09:57:16+00:00"
+            "time": "2021-08-16T19:24:02+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -303,30 +305,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.4",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Log\\": "Psr/Log/"
+                    "Psr\\Log\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -347,9 +349,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.4"
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
-            "time": "2021-05-03T11:20:27+00:00"
+            "time": "2021-07-14T16:46:02+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

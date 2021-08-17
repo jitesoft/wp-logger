@@ -1,6 +1,7 @@
 <?php
 namespace Jitesoft\Wordpress\Plugins\Logger;
 
+use Jitesoft\Log\JsonLogger;
 use Jitesoft\Log\MultiLogger;
 use Jitesoft\Log\StdLogger;
 use Psr\Log\LoggerInterface;
@@ -11,7 +12,6 @@ use Psr\Log\LoggerInterface;
  * Currently uses the STDLogger only, which logs to stdout and stderr.
  */
 class GlobalLogger {
-
     /**
      * Set the log level to use.
      * Automatically done on plugin initialization.
@@ -30,8 +30,24 @@ class GlobalLogger {
     public static function logger(): LoggerInterface {
         static $logger = null;
         if (!$logger) {
+
+            $format = getenv('WP_LOGGER_FORMAT');
+            if (!$format) {
+                $format = 'stdout';
+            }
+
+            $outLogger = null;
+            if ($format === 'stdout') {
+                $outLogger = new StdLogger(
+                    StdLogger::DEFAULT_FORMAT,
+                    "Y-m-d H:i:s.v"
+                );
+            } else if ($format = 'json') {
+                $outLogger = new JsonLogger();
+            }
+
             $logger = new MultiLogger([
-                new StdLogger(StdLogger::DEFAULT_FORMAT, "Y-m-d H:i:s.v"),
+                $outLogger,
             ]);
         }
         return $logger;

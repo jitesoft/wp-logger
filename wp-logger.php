@@ -4,7 +4,7 @@ Plugin Name:       WP-Logger
 Description:       An actual logger for WordPress.
 Plugin URI:        https://github.com/jitesoft/wp-logger
 GitHub Plugin URI: https://github.com/jitesoft/wp-logger
-Version:           1.0.0
+Version:           1.2.0
 Author:            Johannes Tegnér
 Author URI:        https://jitesoft.com
 License:           MIT License
@@ -17,7 +17,7 @@ $getEnv = static function (string $default = 'production') {
     if (defined('WP_ENV')) {
         return WP_ENV;
     }
-    if (getenv('WP_ENV', true)) {
+    if (getenv('WP_ENV')) {
         return getenv('WP_ENV');
     }
 
