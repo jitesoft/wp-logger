@@ -37,13 +37,13 @@ class GlobalLogger {
             }
 
             $outLogger = null;
-            if ($format === 'stdout') {
+            if ($format === 'json') {
+                $outLogger = new JsonLogger();
+            } else {
                 $outLogger = new StdLogger(
                     StdLogger::DEFAULT_FORMAT,
                     "Y-m-d H:i:s.v"
                 );
-            } else if ($format = 'json') {
-                $outLogger = new JsonLogger();
             }
 
             $logger = new MultiLogger([
