@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c40c067fd23d02560e8774f9a0a7821c",
+    "content-hash": "2c62a8a5c4c2f1bbf5b96d3486112318",
     "packages": [
         {
             "name": "composer/installers",
@@ -157,6 +157,138 @@
             "time": "2021-04-28T06:42:17+00:00"
         },
         {
+            "name": "jitesoft/container",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jitesoft/php-container.git",
+                "reference": "d56d5912d173941ee34f2b7cebeb26b5ed27d01f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jitesoft/php-container/zipball/d56d5912d173941ee34f2b7cebeb26b5ed27d01f",
+                "reference": "d56d5912d173941ee34f2b7cebeb26b5ed27d01f",
+                "shasum": ""
+            },
+            "require": {
+                "jitesoft/exceptions": "^2.3.4",
+                "php": ">=7.2",
+                "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jitesoft\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Tegnér",
+                    "email": "johannes@jitesoft.com"
+                }
+            ],
+            "description": "PSR-11 container with constructor injection.",
+            "support": {
+                "issues": "https://github.com/jitesoft/php-container/issues",
+                "source": "https://github.com/jitesoft/php-container/tree/4.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://sponsus.org/u/jitesoft",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jitesoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/jitesoft-open-source",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/jitesoft",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2020-08-30T16:36:59+00:00"
+        },
+        {
+            "name": "jitesoft/exceptions",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jitesoft/php-exceptions.git",
+                "reference": "34d193c0b7403a1321aa03e860c186d7563586c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jitesoft/php-exceptions/zipball/34d193c0b7403a1321aa03e860c186d7563586c9",
+                "reference": "34d193c0b7403a1321aa03e860c186d7563586c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.2",
+                "psr/cache": "^1.0|^2.0|^3.0",
+                "psr/container": "^1.0|^2.0",
+                "psr/http-client": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jitesoft\\Exceptions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Tegnér",
+                    "email": "johannes@jitesoft.com"
+                }
+            ],
+            "description": "Collection of easy to use exception classes.",
+            "keywords": [
+                "exceptions"
+            ],
+            "support": {
+                "issues": "https://github.com/jitesoft/php-exceptions/issues",
+                "source": "https://github.com/jitesoft/php-exceptions"
+            },
+            "funding": [
+                {
+                    "url": "https://sponsus.org/u/jitesoft",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jitesoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/jitesoft-open-source",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/jitesoft",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-06-06T14:30:34+00:00"
+        },
+        {
             "name": "jitesoft/loggers",
             "version": "3.0.0",
             "source": {
@@ -208,6 +340,69 @@
                 "issues": "https://gitlab.com/api/v4/projects/4987858/issues"
             },
             "time": "2021-08-16T19:24:02+00:00"
+        },
+        {
+            "name": "jitesoft/wp-base",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jitesoft/wp-base.git",
+                "reference": "a401a13e3853f5ff39e527c50af90a49387e5b73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jitesoft/wp-base/zipball/a401a13e3853f5ff39e527c50af90a49387e5b73",
+                "reference": "a401a13e3853f5ff39e527c50af90a49387e5b73",
+                "shasum": ""
+            },
+            "require": {
+                "jitesoft/container": "4.1.0",
+                "php": ">=7.4.2|>=8"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/get.php",
+                    "src/static.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes Tegnér",
+                    "email": "johannes@jitesoft.com"
+                }
+            ],
+            "description": "Internal base package for jitesoft wordpress plugins - not a plugin itself.",
+            "support": {
+                "issues": "https://github.com/jitesoft/wp-base/issues",
+                "source": "https://github.com/jitesoft/wp-base/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://sponsus.org/u/jitesoft",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jitesoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/jitesoft-open-source",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/jitesoft",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-08-19T15:36:45+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -302,6 +497,208 @@
                 }
             ],
             "time": "2021-07-28T13:16:28+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/3.0.0"
+            },
+            "time": "2021-02-03T23:26:27+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.1"
+            },
+            "time": "2021-03-05T17:36:06+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client/tree/master"
+            },
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",

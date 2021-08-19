@@ -15,7 +15,8 @@
         "composer/installers": "^1.11",
         "ext-json": "*",
         "jitesoft/loggers": ">=2.3.0",
-        "php": ">=7.4.2"
+        "php": ">=7.4.2",
+        "jitesoft/wp-base": "~1.0.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"

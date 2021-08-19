@@ -36,19 +36,16 @@ class GlobalLogger {
                 $format = 'stdout';
             }
 
-            $outLogger = null;
-            if ($format === 'json') {
-                $outLogger = new JsonLogger();
-            } else {
-                $outLogger = new StdLogger(
-                    StdLogger::DEFAULT_FORMAT,
-                    "Y-m-d H:i:s.v"
-                );
-            }
+            $logger = new MultiLogger();
 
-            $logger = new MultiLogger([
-                $outLogger,
-            ]);
+            if ($format === 'json') {
+                $logger->addLogger(new JsonLogger(), 'json');
+            } else {
+                $logger->addLogger(new StdLogger(
+                    StdLogger::DEFAULT_FORMAT,
+                    'Y-m-d H:i:s.v'
+                ), 'stdout');
+            }
         }
         return $logger;
     }
