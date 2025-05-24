@@ -18,10 +18,10 @@ function create_jitesoft_logger() {
     if (!getenv('WP_LOGGER_LEVEL')) {
         $environment = get_wp_env('production');
         if ($environment === 'production') {
-            GlobalLogger::setLogLevel('error');
+            GlobalLogger::setLogLevel('info');
         } else {
             if ($environment === 'staging') {
-                GlobalLogger::setLogLevel('info');
+                GlobalLogger::setLogLevel('notice');
             } else {
                 GlobalLogger::setLogLevel('debug');
             }
