@@ -12,13 +12,18 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.11",
+        "composer/installers": "^v2.3.0",
         "ext-json": "*",
-        "jitesoft/loggers": ">=2.3.0",
-        "php": ">=7.4.2",
+        "jitesoft/loggers": ">=5.0.0",
+        "php": ">=8.1",
         "jitesoft/wp-base": "~1.1.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
