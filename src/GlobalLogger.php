@@ -1,6 +1,7 @@
 <?php
 namespace Jitesoft\Wordpress\Plugins\Logger;
 
+use Jitesoft\Log\CompactJsonLogger;
 use Jitesoft\Log\JsonLogger;
 use Jitesoft\Log\MultiLogger;
 use Jitesoft\Log\StdLogger;
@@ -38,7 +39,9 @@ class GlobalLogger {
 
             $logger = new MultiLogger();
 
-            if ($format === 'json') {
+            if ($format === "clef") {
+                $logger->addLogger(new CompactJsonLogger(), 'clef');
+            } else if ($format === 'json') {
                 $logger->addLogger(new JsonLogger(), 'json');
             } else {
                 $logger->addLogger(new StdLogger(
